@@ -8,6 +8,7 @@
 <h1>Ionic Image Upload</h1>
 <?php
 $scan = scandir('uploads');
+
 foreach ($scan as $file) {
     if (!is_dir($file)) {
         echo '<h3>' . $file . '</h3>';
